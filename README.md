@@ -140,4 +140,4 @@ The final condition should be for knight1 and knight2 to swap positions.
 
 **What to turn in**: The file `dual-knights-problem.pddl` , which must be compatible with your `single-knight-domain.pddl` from part 3.
 
-# Please out files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under CS388U-assignment1
+# Please put files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under CS388U-assignment1
