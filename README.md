@@ -52,7 +52,7 @@ You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `hav
     (clean )  
     (bake cake)
     ```  
-    **What to turn in**: cake-complex-domain.pddl , which should be compatible with the original provided cake-problem.pddl .  
+    **What to turn in**: `cake-complex-domain.pddl` , which should be compatible with the original provided cake-problem.pddl .  
 
 2. Expand the problem to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
     The initial state must be empty.  
@@ -143,5 +143,6 @@ The final condition should be for knight1 and knight2 to swap positions.
 # Submission Instructions
 Please put files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under CS388U-assignment1.
 Your zip file should include the following files:
-1. [....]
+1. `cake-complex-problem.pddl` for part 1.1
 2. 
+3. 
