@@ -27,7 +27,7 @@ To run the planner and check the results:
     ```
     ./fast-downward.py --alias lama-first {domain-file.pddl} {problem-file.pddl}
     ``` 
-    For example:
+   For example:
    ``` 
     ./fast-downward.py --alias lama-first cake-domain.pddl cake-problem.pddl
    ```
@@ -45,7 +45,7 @@ References:
 
 You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `have-cake-eat-cake` problem discussed in class. Modify the domain and the problem to create a more complex setting:
 
-1. Modify the domain so that once something is baked, the dishes are dirty, and need to be cleaned using the "clean" action. The resulting plan in the simple eat-cake-have-cake problem but using this complex domain should be:  
+1. Create file, `cake-complex-domain.pddl` with conntent from `cake-domain.pddl`. Modify the domain in `cake-complex-domain.pddl` so that once something is baked, the dishes are dirty, and need to be cleaned using the "clean" action. The resulting plan in the simple eat-cake-have-cake problem but using this complex domain should be:  
     ```
     (bake cake)  
     (eat cake)  
@@ -54,7 +54,7 @@ You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `hav
     ```  
     **What to turn in**: `cake-complex-domain.pddl` , which should be compatible with the original provided cake-problem.pddl .  
 
-2. Expand the problem to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
+2. Create file, `cake-complex-domain.pddl` with conntent from `ccake-problem.pddl`. Expand the problem in `cake-complex-domain.pddl` to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
     The initial state must be empty.  
     The goal condition must be: `(and (eaten cake) (eaten pie) (eaten cookies)) `
 
@@ -63,7 +63,7 @@ You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `hav
 
 ## Part 2: Single-Piece King Moves
 
-Create a PDDL domain definition for a single king chess piece moving on an arbitrary sized board. You must use the following predicates, _and no others_:
+1. Create a PDDL domain definition, `king` in file `single-king-domain.pddl`, for a single king chess piece moving on an arbitrary sized board. You must use the following predicates, _and no others_:
 - `(at ?p ?x ?y) `- Indicates that piece ?p is at the square ?x, ?y
 - `(adjacent ?y1 ?y2)` - Indicates that the x- or y- coordinates ?y1, ?y2 are adjacent
 - `(occupied ?x ?y)` - Indicates that the square ?x, ?y is occupied by another (untitled) piece
@@ -72,7 +72,7 @@ The domain definition must define a move action with the following signature:
   (:action move
         :parameters (?p ?x1 ?y1 ?x2 ?y2)
   ```
-Create a compatible PDDL problem definition for an 8x7 (8 squares along y direction, and 7 along x direction) board, with the following initial state:
+2. Create a compatible PDDL problem definition, `single-king-problem` in file `single-king-problem.pddl`, for an 8x7 (8 squares along y direction, and 7 along x direction) board, with the following initial state:
 - The king starts out from the lower left corner of the board (1, 1).
 - Mark the coordinates (7,7) and (6,7) as occupied.
 
@@ -92,7 +92,7 @@ The domain definition must be precise enough to ensure that all valid moves are 
 
 ## Part 3: Single-Piece Knight Moves
 
-Create a PDDL domain definition for a single knight chess piece moving on an arbitrary sized board. You must use the following predicates, and _and no others_:
+Create a PDDL domain definition, `knight` in file `single-knight-domain.pddl`, for a single knight chess piece moving on an arbitrary sized board. You must use the following predicates, and _and no others_:
 
 - `(at ?p ?x ?y)` - Indicates that piece ?p is at the square ?x, ?y
 - `occupied ?x ?y)` - Indicates that the square ?x, ?y is occupied by another (untitled) piece
@@ -104,7 +104,7 @@ The domain definition must define a move action with the following signature:
 (:action move
     :parameters (?p ?x1 ?y1 ?x2 ?y2)
 ```
-Create a compatible PDDL problem definition for an 8x7 (8 squares along y direction, and 7 along x direction) board, with the following initial state:
+2. Create a compatible PDDL problem definition, `single-knight-problem` in file `single-knight-problem.pddl`, for an 8x7 (8 squares along y direction, and 7 along x direction) board, with the following initial state:
 - The knight starts out from the lower left corner of the board (1, 1).
 - Mark the coordinates (2,3) and (6,6) as occupied.
 The final condition should be for the knight to reach (7, 8)
@@ -123,7 +123,7 @@ The domain definition must be precise enough to ensure that all valid moves are 
 
 ## Extra Credit: Dual Knight Moves
 
-Create a PDDL problem definition for an 8x7 (8 rows, 7 columns) board with two knight chess pieces. This problem definition must be compatible with the domain definition in part 3.
+Create a PDDL problem definition, `dual-knights-problem` in file `dual-knights-problem.pddl`, for an 8x7 (8 rows, 7 columns) board with two knight chess pieces. This problem definition must be compatible with the domain definition in part 3.
 Your objects section must contain only the following:
 ```
 (:objects
@@ -144,5 +144,9 @@ The final condition should be for knight1 and knight2 to swap positions.
 Please put files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under CS388U-assignment1.
 Your zip file should include the following files:
 1. `cake-complex-problem.pddl` for part 1.1
-2. 
-3. 
+2. `cake-complex-problem.pddl` for part 2.2
+3. `single-king-domain.pddl` for part 2.1
+4. `single-king-problem.pddl` for part 2.2
+5. `single-knight-domain.pddl` for part 3.1
+6. `single-knight-problem.pddl` for part 3.2
+7. `dual-knights-problem.pddl` for Extra Credit
