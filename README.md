@@ -54,7 +54,7 @@ You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `hav
     ```  
     **What to turn in**: `cake-complex-domain.pddl` , which should be compatible with the original provided cake-problem.pddl .  
 
-2. Create file, `cake-complex-domain.pddl` with conntent from `ccake-problem.pddl`. Expand the problem in `cake-complex-domain.pddl` to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
+2. Create file, `cake-complex-problem.pddl` with content from `cake-problem.pddl`. Expand the problem in `cake-complex-domain.pddl` to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
     The initial state must be empty.  
     The goal condition must be: `(and (eaten cake) (eaten pie) (eaten cookies)) `
 
@@ -143,7 +143,7 @@ The final condition should be for knight1 and knight2 to swap positions.
 # Submission Instructions
 Please put files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under AI388U-assignment1.
 Your zip file should include the following files:
-1. `cake-complex-problem.pddl` for part 1.1
+1. `cake-complex-domain.pddl` for part 1.1
 2. `cake-complex-problem.pddl` for part 2.2
 3. `single-king-domain.pddl` for part 2.1
 4. `single-king-problem.pddl` for part 2.2
