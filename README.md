@@ -54,7 +54,7 @@ You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `hav
     ```  
     **What to turn in**: `cake-complex-domain.pddl` , which should be compatible with the original provided cake-problem.pddl .  
 
-2. Create file, `cake-complex-domain.pddl` with conntent from `ccake-problem.pddl`. Expand the problem in `cake-complex-domain.pddl` to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
+2. Create file, `cake-complex-problem.pddl` with content from `cake-problem.pddl`. Expand the problem in `cake-complex-problem.pddl` to satisfy the additional objects pie and cookies, and to have a goal condition that includes eaten pie and eaten cookies.  
     The initial state must be empty.  
     The goal condition must be: `(and (eaten cake) (eaten pie) (eaten cookies)) `
 
