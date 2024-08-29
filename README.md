@@ -41,7 +41,7 @@ References:
 - FastDownward project website: <https://www.fast-downward.org/>
 - Repository for FastDownward: <https://github.com/aibasel/downward>
 - FastDownward supported PDDL features list: <https://planning.wiki/ref/planners/fd>
-- Environment setup Dependencies: <https://www.fast-downward.org/ObtainingAndRunningFastDownward>
+- Environment setup Dependencies: <https://github.com/aibasel/downward/blob/main/BUILD.md>
 
 
 ## Part 1: Complex Eat-Cake
