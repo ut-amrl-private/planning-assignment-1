@@ -144,8 +144,7 @@ The final condition should be for knight1 and knight2 to swap positions.
 **What to turn in**: The file `dual-knights-problem.pddl` , which must be compatible with your `single-knight-domain.pddl` from part 3.
 
 # Submission Instructions
-Please put files mentioned in "What to turn in" into zip file, and submit the zip file in Gradescope under AI388U-assignment1.
-Your zip file should include the following files:
+Place the following files into a flat zip file (no directories) and submit in Gradescope under AI388U-assignment1:
 1. `cake-complex-domain.pddl` for part 1.1
 2. `cake-complex-problem.pddl` for part 2.2
 3. `single-king-domain.pddl` for part 2.1
