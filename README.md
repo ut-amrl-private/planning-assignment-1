@@ -4,7 +4,7 @@ In this assignment, you will use PDDL to formally define domains and problem des
 
 **Important**: We will only work with the STRIPS subset of the PDDL 1.2 specifications for this assignment. The only requirement your PDDL files should include is `(:requirements :strips)` .
 
-## Part 1: Getting started**
+## Part 1: Getting started
 
 For this assignment, you will use the [FastDownward](https://www.fast-downward.org/) planning system to design and test planning domains and problems. Note: version >= 23.06 compiles using the C++20 standard. The autograder runs version 22.12.
 
