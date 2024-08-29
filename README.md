@@ -4,22 +4,25 @@ In this assignment, you will use PDDL to formally define domains and problem des
 
 **Important**: We will only work with the STRIPS subset of the PDDL 1.2 specifications for this assignment. The only requirement your PDDL files should include is `(:requirements :strips)` .
 
-**Getting started**
+## Part 1: Getting started**
 
 For this assignment, you will use the [FastDownward](https://www.fast-downward.org/) planning system to design and test planning domains and problems. Note: version >= 23.06 compiles using the C++20 standard. The autograder runs version 22.12.
 
-To get the planner and compile it:
+To get the planner and compile it:  If you run into issues, 
 
-1. Clone the code for fast-downward:
+1. Install dependencies as listed in the [FastDownard build instructions](https://github.com/aibasel/downward/blob/main/BUILD.md).
+   - **Windows users**:  Make sure to install the [Visual Studio Build Tools Supporting C++](https://aka.ms/vs/17/release/vs_BuildTools.exe). These are also contained in the "Desktop development with C++" workload that you can download via the Visual Studio Installer. You may also need to create a new, empty C++ project for the libraries to register.
+3. Clone the code for fast-downward:
    ``` 
     git clone <https://github.com/aibasel/downward.git>  
     cd downward
     git checkout origin/release-22.12
    ```
-3. Compile using the provided build script:  
+4. Compile using the provided build script:  
     ```
     ./build.py
     ```
+    - **Windows users**:  See the FastDownward build instructions above.
 
 To run the planner and check the results:
 
@@ -31,7 +34,7 @@ To run the planner and check the results:
    ``` 
     ./fast-downward.py --alias lama-first cake-domain.pddl cake-problem.pddl
    ```
-3. If a plan is found, it will be saved in the file sas_plan by default. You can inspect the plan in the file:  
+2. If a plan is found, it will be saved in the file sas_plan by default. You can inspect the plan in the file:  
     `cat sas_plan`
 
 References:
