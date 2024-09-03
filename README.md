@@ -48,7 +48,7 @@ References:
 
 You have been provided a `cake-domain.pddl` and `cake-problem.pddl` for the `have-cake-eat-cake` problem discussed in class. Modify the domain and the problem to create a more complex setting:
 
-1. Create file, `cake-complex-domain.pddl` with conntent from `cake-domain.pddl`. Modify the domain in `cake-complex-domain.pddl` so that once something is baked, the dishes are dirty, and need to be cleaned using the "clean" action. The resulting plan in the simple eat-cake-have-cake problem but using this complex domain should be:  
+1. Create file, `cake-complex-domain.pddl` with conntent from `cake-domain.pddl`. Keep `cake` as domain name. Modify the domain in `cake-complex-domain.pddl` so that once something is baked, the dishes are dirty, and need to be cleaned using the "clean" action. The resulting plan in the simple eat-cake-have-cake problem but using this complex domain should be:  
     ```
     (bake cake)  
     (eat cake)  
