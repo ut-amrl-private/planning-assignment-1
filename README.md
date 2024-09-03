@@ -143,14 +143,6 @@ The final condition should be for knight1 and knight2 to swap positions.
 
 **What to turn in**: The file `dual-knights-problem.pddl` , which must be compatible with your `single-knight-domain.pddl` from part 3.
 
-
-# Debugging Tips
-
-Gradescope tests consider cases that go beyond the simple initial conditions as described in this readme.  If you are struggling to pass some of the tests, we recommend trying out small scenarios by hand.  Issues can often be attributed to unconsidered edge cases.
-
-**Note**: Test cases with `multi` in their name mean that they are testing multiple problem configurations. They are not testing multiple pieces, which is only considered in the `dual-knights-problem.pddl`.
-
-
 # Submission Instructions
 Place the following files into a flat zip file (no directories) and submit in Gradescope under AI388U-assignment1:
 1. `cake-complex-domain.pddl` for part 1.1
@@ -160,3 +152,9 @@ Place the following files into a flat zip file (no directories) and submit in Gr
 5. `single-knight-domain.pddl` for part 3.1
 6. `single-knight-problem.pddl` for part 3.2
 7. `dual-knights-problem.pddl` for Extra Credit
+
+# Debugging Tips
+
+Gradescope tests consider cases that go beyond the simple initial conditions as described in this readme.  If you are struggling to pass some of the tests, we recommend trying out small scenarios by hand.  Issues can often be attributed to unconsidered edge cases.
+
+**Note**: Test cases with `multi` in their name mean that they are testing multiple problem configurations. They are not testing multiple pieces, which is only considered in the `dual-knights-problem.pddl`.
