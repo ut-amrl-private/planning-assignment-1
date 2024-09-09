@@ -75,6 +75,8 @@ The domain definition must define a move action with the following signature:
   (:action move
         :parameters (?p ?x1 ?y1 ?x2 ?y2)
   ```
+    > :warning: The domain name must be named exactly `king` to pass Autograder checks.
+
 2. Create a compatible PDDL problem definition, `single-king-problem` in file `single-king-problem.pddl`, for an 8x7 (8 squares along y direction, and 7 along x direction) board, with the following initial state:
 - The king starts out from the lower left corner of the board (1, 1).
 - Mark the coordinates (7,7) and (6,7) as occupied.
@@ -107,6 +109,8 @@ The domain definition must define a move action with the following signature:
 (:action move
     :parameters (?p ?x1 ?y1 ?x2 ?y2)
 ```
+    > :warning: The domain name must be named exactly `knight` to pass Autograder checks.
+
 2. Create a compatible PDDL problem definition, `single-knight-problem` in file `single-knight-problem.pddl`, for an 8x7 (8 squares along y direction, and 7 along x direction) board, with the following initial state:
 - The knight starts out from the lower left corner of the board (1, 1).
 - Mark the coordinates (2,3) and (6,6) as occupied.
@@ -155,6 +159,8 @@ Place the following files into a flat zip file (no directories) and submit in Gr
 
 # Debugging Tips
 
-Gradescope tests consider cases that go beyond the simple initial conditions as described in this readme.  If you are struggling to pass some of the tests, we recommend trying out small scenarios by hand.  Issues can often be attributed to unconsidered edge cases.
+Gradescope tests consider cases that go beyond the simple initial conditions as described in this readme.  If you are struggling to pass some of the tests, we recommend trying out small scenarios by hand.  Issues can often be attributed to unconsidered edge cases. 
+
+If you are continuing to fail test cases with `multi` in their name, ensure your domain names are named according to the expected names that the test cases are expecting. Check the domain setup instructions for each problem set.
 
 **Note**: Test cases with `multi` in their name mean that they are testing multiple problem configurations. They are not testing multiple pieces, which is only considered in the `dual-knights-problem.pddl`.
